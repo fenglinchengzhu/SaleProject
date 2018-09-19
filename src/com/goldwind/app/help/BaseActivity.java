@@ -60,7 +60,7 @@ public abstract class BaseActivity extends Activity implements OnClickListener {
     /**
      * 初始化数据
      */
-    protected abstract void initData();
+    protected void initData();
 
     /**
      * 点击事件
