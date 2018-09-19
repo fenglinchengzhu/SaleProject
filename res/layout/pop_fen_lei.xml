@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flowlayout="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c7"
+    android:paddingBottom="10dp"
+    android:paddingTop="7dp">
+
+    <com.goldwind.app.help.view.FlowLayout
+        android:id="@+id/flow_fen_lei_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        flowlayout:horizontal_spacing="8dp"
+        flowlayout:vertical_spacing="8dp"></com.goldwind.app.help.view.FlowLayout>
+
+</RelativeLayout>

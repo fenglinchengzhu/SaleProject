@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_ebebeb"
+    android:orientation="vertical"
+    tools:context="com.goldwind.app.help.fragment.KnowledgeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/afc_30dp"
+        android:background="@drawable/wiki_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="32px"
+        android:paddingRight="32px">
+
+        <TextView
+            android:id="@+id/logo_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30px"
+            android:text="金风营销系统知识百科"
+            android:textColor="#999999"
+            android:textSize="64px" />
+
+        <com.goldwind.app.help.view.ClearEditText
+            android:id="@+id/frag_knowledge_search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo_label"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/wiki_input"
+            android:drawableRight="@drawable/delete_selector"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_5_padding"
+            android:text="搜索"
+            android:textSize="@dimen/txt_20_size" />
+
+        <ImageButton
+            android:id="@+id/frag_knowledge_search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/frag_knowledge_search_edit"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_btn" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_60_padding"
+        android:paddingLeft="@dimen/dp_10_padding"
+        android:paddingRight="@dimen/dp_10_padding">
+
+        <ListView
+            android:id="@+id/frag_knowledge_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="#dddddd"
+            android:dividerHeight="2px"
+            android:fadingEdge="none" />
+    </LinearLayout>
+
+</LinearLayout>

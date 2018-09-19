@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/baike_search_height"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="76px"
+        android:src="@drawable/search2_search_icon" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/baike_search_height"
+
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/tv_time"
+        android:layout_toRightOf="@+id/iv_logo"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+
+        android:textColor="#b4d1ee"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:text="16-02-01"
+        android:textColor="#ff888888"
+        android:textSize="14sp"
+        android:visibility="gone" />
+</RelativeLayout>
+
+
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_10_padding"
+    android:paddingLeft="@dimen/dp_20_padding"
+    android:paddingRight="@dimen/dp_20_padding"
+    android:background="@drawable/u2" >
+    <ImageView
+        android:id="@+id/index_calculator_back_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/popup_back" />
+    <TextView
+        android:id="@+id/index_calculator_title_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/index_calculator_back_img"
+        android:layout_toLeftOf="@+id/index_calculator_switch_img"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/txt_18_size"
+        android:text="计算器"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+</RelativeLayout>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/c7">
+
+    <ImageView
+        android:id="@+id/index_calculator_back_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_10_padding"
+        android:padding="@dimen/dp_10_padding"
+        android:src="@drawable/calculator_back_icon" />
+
+    <LinearLayout
+        android:id="@+id/index_calculator_title_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/index_calculator_title_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="文档"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>
+

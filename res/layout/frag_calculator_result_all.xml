@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_bg">
+
+    <RelativeLayout
+        android:id="@+id/frag_cal_result_all_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10_padding"
+        android:padding="@dimen/dp_10_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/str_frag_cal_input_part_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_20_size" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_orange_shape"
+            android:text="保存为模板" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frag_cal_result_all_top">
+
+        <TableRow>
+
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

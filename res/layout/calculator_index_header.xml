@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/c7">
+
+    <ImageView
+        android:id="@+id/index_calculator_back_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_10_padding"
+        android:padding="@dimen/dp_10_padding"
+        android:src="@drawable/calculator_back_icon" />
+
+    <ImageView
+        android:id="@+id/index_calculator_switch_img"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/index_switch_icon" />
+
+    <LinearLayout
+        android:id="@+id/index_calculator_title_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/index_calculator_title_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="2.0MW计算器"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/index_calculator_down_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/index_calculator_title_lay"
+        android:padding="@dimen/dp_5_padding"
+        android:src="@drawable/calculator_top_menu_down"
+        android:visibility="gone" />
+    <!--<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/index_calculator_title_txt"
+        android:layout_marginLeft="@dimen/dp_10_padding"
+        android:background="@drawable/calculator_top_menu_down"/>-->
+</RelativeLayout>

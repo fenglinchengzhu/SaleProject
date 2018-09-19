@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/calculator_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:layout_alignParentTop="true"
+        android:background="@color/top_bar_normal_bg">
+
+        <ImageView
+            android:id="@+id/top_menu_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_20_padding"
+            android:background="@drawable/top_bar_back"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/top_menu_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="计算器"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_20_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="18px"
+        android:paddingRight="18px"
+        android:paddingTop="10px">
+
+        <!--android:background="@drawable/calculator_20_icon"-->
+        <ImageView
+            android:id="@+id/icon_calculator_20_img"
+            android:layout_width="@dimen/calculator_size_1"
+            android:layout_height="@dimen/calculator_size_1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10px"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/icon_calculator_15_img"
+            android:layout_width="@dimen/calculator_size_2"
+            android:layout_height="@dimen/calculator_size_2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/icon_calculator_20_img"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/icon_calculator_20_img"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/icon_calculator_25_img"
+            android:layout_width="@dimen/calculator_size_2"
+            android:layout_height="@dimen/calculator_size_2"
+            android:layout_alignBottom="@+id/icon_calculator_20_img"
+            android:layout_alignEnd="@+id/icon_calculator_mytemp_img"
+            android:layout_alignRight="@+id/icon_calculator_mytemp_img"
+            android:layout_below="@+id/icon_calculator_15_img"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="10px"
+            android:layout_toRightOf="@+id/icon_calculator_20_img" />
+
+        <ImageView
+            android:id="@+id/icon_calculator_30_img"
+            android:layout_width="@dimen/calculator_size_2"
+            android:layout_height="@dimen/calculator_size_2"
+            android:layout_below="@+id/icon_calculator_20_img"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="10px"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/icon_calculator_mytemp_img"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/calculator_size_2"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/icon_calculator_30_img"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/icon_calculator_30_img"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/icon_calculator_myhistory_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/calculator_size_2"
+            android:layout_below="@+id/icon_calculator_30_img"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="10px"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="288px"
+    android:background="@color/white"
+    android:padding="@dimen/afc_5dp">
+
+    <ImageView
+        android:id="@+id/frag_knowledge_item_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="9dp"
+        android:src="@drawable/news_notice_icon"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/frag_knowledge_item_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="9dp"
+        android:background="@drawable/img_right_arrow" />
+
+    <TextView
+        android:id="@+id/frag_knowledge_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_toLeftOf="@+id/frag_knowledge_item_right"
+        android:layout_toRightOf="@+id/frag_knowledge_item_icon"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="#333333"
+        android:textSize="@dimen/txt_14_size" />
+</RelativeLayout>

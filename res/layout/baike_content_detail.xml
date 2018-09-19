@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:layout_alignParentTop="true"
+        android:background="@color/top_bar_normal_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:padding="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_arrow_left" />
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxWidth="200dp"
+            android:singleLine="true"
+            android:text="知识百科"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_load_more"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar"
+        android:max="100"
+        android:maxHeight="2dp"
+        android:minHeight="2dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_bar"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pb_load_more">
+
+        <com.goldwind.app.help.view.SlideMenu
+            android:id="@+id/baike_slide_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:background="#2f3432"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="23dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_baike_directory"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <ListView
+                    android:id="@+id/baike_detail_listview"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:divider="#373b3a"
+                    android:dividerHeight="1dp" />
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:transcriptMode="normal" />
+        </com.goldwind.app.help.view.SlideMenu>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

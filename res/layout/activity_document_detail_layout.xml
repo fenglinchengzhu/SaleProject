@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/c7"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10_padding"
+            android:padding="@dimen/dp_10_padding"
+            android:src="@drawable/calculator_back_icon" />
+
+        <LinearLayout
+            android:id="@+id/index_calculator_title_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/iv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="文档"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFCCCCCC" />-->
+    <FrameLayout
+        android:id="@+id/activity_doc_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ebebeb" />
+</LinearLayout>

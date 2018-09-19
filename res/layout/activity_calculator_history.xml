@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_ebebeb"
+    tools:context="com.goldwind.app.help.activity.CalculatorHistoryActivity">
+
+    <RelativeLayout
+        android:id="@+id/history_top_lay"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/top_bar_normal_bg">
+
+        <TextView
+            android:id="@+id/calculator_history_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/str_my_cal_history"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/calculator_history_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_arrow_left" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/history_top_lay"
+        android:layout_marginTop="3dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/frag_my_history_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/c_ebebeb"
+            android:dividerHeight="1dp"
+            android:paddingLeft="27px"
+            android:paddingRight="27px" />
+
+        <View style="@style/calculator_input_all_diliver" />
+    </LinearLayout>
+</RelativeLayout>

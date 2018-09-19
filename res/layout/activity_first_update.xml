@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome">
+
+    <ProgressBar
+        android:id="@+id/kp_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kp_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:text="正在加载数据，请稍后"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+</RelativeLayout>

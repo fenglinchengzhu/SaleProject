@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="jin_feng_name">金风营销系统</string>
+    <string name="empty_string"></string>
+
+    <string name="app_channel1">TEST</string>
+    <string name="app_channel2">FORMAL</string>
+
+    <!-- 关于界面 -->
+    <string name="about_tianyuan_company_info">版权所有：新疆金风科技股份有限公司</string>
+    <string name="about_tianyuan_company_addr">地址：新疆乌鲁木齐经济技术开发区上海路107号</string>
+    <string name="about_tianyuan_tel">电话：+86&#8211;(0)10&#8211;67511880</string>
+    <string name="about_ty_pt">传真：+86&#8211;(0)10&#8211;67812810&#8211;1600</string>
+    <string name="about_ty_zc">邮编：100176</string>
+    <string name="about_tiancheng_company_info">版权所有：金风科技股份有限公司 </string>
+    <string name="about_tiancheng_company_addr">地址：北京市北京经济技术开发区康定街19号 </string>
+    <string name="about_tiancheng_tel">电话：+86&#8211;(0)10&#8211; 67853789</string>
+    <string name="about_tc_pt">传真：+86&#8211;(0)10&#8211;67853789&#8211;500</string>
+    <string name="about_tc_zc">邮编：100176</string>
+    <string name="cp">版权所有：</string>
+    <string name="adr">地址：</string>
+    <string name="tel">电话：</string>
+    <string name="pt">传真：</string>
+    <string name="zc">邮编：</string>
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新</string>
+    <string name="xlistview_header_hint_loading">载入中…</string>
+    <string name="xlistview_header_last_time">上次刷新：</string>
+    <string name="xlistview_footer_hint_normal">加载更多数据</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_footer_small_hint_normal">上拉加载更多</string>
+    <string name="xlistview_footer_small_hint_ready">上拉加载更多</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="str_search">搜索</string>
+
+    <string name="jingeng_keji">金风科技营销系统</string>
+    <string name="search_result_time">14-2-12</string>
+
+    <string name="title_activity_search_result">SearchResultActivity</string>
+
+    <string name="str_frag_cal_input_hint_1">MW</string>
+    <string name="str_frag_cal_input_hint_2">小时</string>
+    <string name="str_frag_cal_input_hint_3">元/度</string>
+    <string name="str_frag_cal_input_hint_4">元</string>
+    <string name="str_frag_cal_input_hint_5">人</string>
+    <string name="str_frag_cal_input_hint_6">万/人年</string>
+    <string name="str_frag_cal_input_hint_7">%</string>
+    <string name="str_frag_cal_input_hint_8">台</string>
+    <string name="str_frag_cal_input_hint_9">万度</string>
+
+    <!--新的版本单位显示-->
+    <string name="str_frag_cal_input_unit_1">MW</string>
+    <string name="str_frag_cal_input_unit_2">h</string>
+    <string name="str_frag_cal_input_unit_3">年</string>
+    <string name="str_frag_cal_input_unit_4">米</string>
+    <string name="str_frag_cal_input_unit_5">人</string>
+    <string name="str_frag_cal_input_unit_6">次</string>
+    <string name="str_frag_cal_input_unit_7">%</string>
+    <string name="str_frag_cal_input_unit_8">台</string>
+    <string name="str_frag_cal_input_unit_9">kW</string>
+    <string name="str_frag_cal_input_unit_10">回</string>
+    <string name="str_frag_cal_input_unit_11">间隔</string>
+    <string name="str_frag_cal_input_unit_12">万元/人/年</string>
+    <string name="str_frag_cal_input_unit_13">元/kW</string>
+
+
+    <!--旧的版本常量显示-->
+    <string name="str_frag_cal_input_rongliang">装机容量</string>
+    <string name="str_frag_cal_input_standard">年标准运行小时</string>
+    <string name="str_frag_cal_input_elecprice">电价(含税)</string>
+    <string name="str_frag_cal_input_sanhalf">三免三减半</string>
+    <string name="str_frag_cal_input_zaojia">千瓦造价</string>
+    <string name="str_frag_cal_input_renshu">电厂员人数</string>
+    <string name="str_frag_cal_input_gongzi">人均工资数</string>
+    <string name="str_frag_cal_input_bili">基本金比例</string>
+
+    <!--新的版本简单计算器常量显示-->
+    <string name="str_frag_cal_input_inA">项目所属区域</string>
+    <string name="str_frag_cal_input_inB">项目公司注册地</string>
+    <string name="str_frag_cal_input_inC">项目所在省份</string>
+    <string name="str_frag_cal_input_inD">风区类别</string>
+    <string name="str_frag_cal_input_inE">机组类型</string>
+    <string name="str_frag_cal_input_inF">总装机量</string>
+    <string name="str_frag_cal_input_inG">利用小时数</string>
+    <string name="str_frag_cal_input_inH">建设期（年）</string>
+    <string name="str_frag_cal_input_inI">塔筒高度</string>
+    <string name="str_frag_cal_input_inJ">运维定员</string>
+
+
+    <string name="str_frag_cal_input_part_name">当前使用:2.0MW 计算器</string>
+
+    <string name="str_stub_cal_zhuangji">@string/str_frag_cal_input_rongliang</string>
+    <string name="str_stub_cal_danji">单机容量</string>
+    <string name="str_stub_cal_taishu">台数</string>
+
+    <string name="str_stub_cal_stantard">@string/str_frag_cal_input_standard</string>
+    <string name="str_stub_cal_sunshilv">上网电量损失率</string>
+    <string name="str_stub_cal_eleprice">@string/str_frag_cal_input_elecprice</string>
+    <string name="str_stub_cal_lilun_fadian">理论发电量</string>
+    <string name="str_stub_cal_first_fadian">第一年发电量</string>
+
+    <string name="str_my_cal_mode">我的计算模板</string>
+    <string name="str_my_cal_history">计算历史保留</string>
+    <string name="str_start_compute">建设中</string>
+    <string name="str_start_compute_simple">开始计算</string>
+
+    <string name="str_baike_directory">目录</string>
+    <!--<string name="str_current_string">当前使用:%1$s</string>-->
+    <string name="str_current_string">@string/str_frag_cal_input_part_name</string>
+    <string name="str_save_template">保存为模板</string>
+    <string name="str_main_calculator">主投方案</string>
+
+    <string name="str_template_all_rongliang">装机容量(万千瓦)</string>
+    <string name="str_template_all_lixi">建设期利息(万元)</string>
+    <string name="str_template_all_dt_touzi">动态总投资(万元)</string>
+    <string name="str_template_all_quanbu">全部投资内部收益</string>
+    <string name="str_template_all_ziyou">自有投资内部收益</string>
+    <string name="str_template_all_touzi_lilv">投资利润率</string>
+    <string name="str_template_all_zibenjin">资本金利润率</string>
+    <string name="str_template_all_dudian">度电成本</string>
+    <string name="str_template_all_nianfa">年发电量(万度)</string>
+
+    <!--简单计算器输出量常量-->
+    <string name="str_cal_simple_outA">机型</string>
+    <string name="str_cal_simple_outB">装机容量(万千瓦)</string>
+    <string name="str_cal_simple_outE1">千瓦造价(元)</string>
+    <string name="str_cal_simple_outF1">年发电量(万度)</string>
+    <string name="str_cal_simple_outC">动态总投资(万元)</string>
+    <string name="str_cal_simple_outI">总成本费用(万元)</string>
+    <string name="str_cal_simple_outM">全部投资内部收益率(%)</string>
+    <string name="str_cal_simple_outP">自有资金内部收益率(%)</string>
+    <string name="str_cal_simple_outY">投资利润率(%)</string>
+    <string name="str_cal_simple_outZ">资本金利润率(%)</string>
+    <string name="str_cal_simple_outC1">资产负债率(%)</string>
+    <string name="str_cal_simple_outD1">度电成本</string>
+
+    <string name="str_cal_simple_outD">建设投资(万元)</string>
+    <string name="str_cal_simple_outE">建设期利息(万元)</string>
+    <string name="str_cal_simple_outF">流动资金(万元)</string>
+    <string name="str_cal_simple_outG">总收入(万元)</string>
+    <string name="str_cal_simple_outH">销售税金及附加(万元)</string>
+    <string name="str_cal_simple_outJ">年均利润总额(万元)</string>
+    <string name="str_cal_simple_outK">年均所得税(万元)</string>
+    <string name="str_cal_simple_outL">内部收益率(%)</string>
+    <string name="str_cal_simple_outN">全部投资内部收益率所得税前</string>
+    <string name="str_cal_simple_outO">全部投资内部收益率所得税后</string>
+    <string name="str_cal_simple_outQ">基准收益率</string>
+    <string name="str_cal_simple_outR">财务净现值(万元)</string>
+    <string name="str_cal_simple_outS">全部投资财务净现值</string>
+    <string name="str_cal_simple_outT">全部投资财务净现值所得税前</string>
+    <string name="str_cal_simple_outU">全部投资财务净现值所得税后</string>
+    <string name="str_cal_simple_outV">资本金财务净现值(10%)</string>
+    <string name="str_cal_simple_outW">投资回收期(年)</string>
+    <string name="str_cal_simple_outX">总投资收益率(%)</string>
+    <string name="str_cal_simple_outA1">生产能力利用率盈亏平衡点(%)</string>
+    <string name="str_cal_simple_outB1">贷款偿还期(年)</string>
+    <string name="str_cal_simple_outG1">单位千瓦售价(年)</string>
+    <string name="str_cal_simple_outH1">标准运行小时数(h)</string>
+
+
+    <string name="str_template_all_rongliang_value">5.00</string>
+    <string name="str_template_all_lixi_value">10850.00</string>
+    <string name="str_template_all_dt_touzi_value">42.497.40</string>
+    <string name="str_template_all_quanbu_value">6.86%</string>
+    <string name="str_template_all_ziyou_value">10.87%</string>
+    <string name="str_template_all_touzi_lilv_value">2.73%</string>
+    <string name="str_template_all_zibenjin_value">13.66%</string>
+    <string name="str_template_all_dudian_value">0.350090393</string>
+    <string name="str_template_all_nianfa_value">10,850.00</string>
+    <string name="title_activity_document">DocumentActivity</string>
+
+    <!--新版本复杂计算器常量-->
+    <string name="str_complex_input_rongliang1">单台容量（一）</string>
+    <string name="str_complex_input_rongliang2">单台容量（二）</string>
+    <string name="str_complex_input_taishu1">台数（一）</string>
+    <string name="str_complex_input_taishu2">台数（二）</string>
+    <string name="str_complex_input_hours">利用小时数</string>
+    <string name="str_complex_input_start_date">机组开工日期</string>
+    <string name="str_complex_input_construct">建设期（年）</string>
+    <string name="str_complex_input_run_time">运营期限（年）</string>
+    <string name="str_complex_input_spinner_zichan">固定资产增值税是否抵扣</string>
+    <string name="str_complex_input_cash_percent">资本金比例</string>
+    <string name="str_complex_input_loan_percent">长期贷款名义利率</string>
+    <string name="str_complex_input_loan_times">年计息次数</string>
+    <string name="str_complex_input_loan_delay">贷款宽限期</string>
+    <string name="str_complex_input_loan_back">还款方式</string>
+
+    <string name="str_stub_jizu_yelun">叶轮直径</string>
+    <!--3.风电场-->
+    <string name="str_stub_fengdian_tatong">电缆（塔筒至箱变）路径长度</string>
+    <string name="str_stub_fengdian_xiangbian">电缆（箱变至集电线路）路径长度</string>
+    <string name="str_stub_fengdian_jidian_dengji">集电线路电压等级</string>
+    <string name="str_stub_fengdian_jidian_pushe">集电线路敷设方式</string>
+    <string name="str_stub_fengdian_jinzhan">进站线路回数</string>
+    <string name="str_stub_fengdian_type">风电场道路类型</string>
+    <!--4.升压站-->
+    <string name="str_stub_shengya_zhongqi">升压站终期容量</string>
+    <string name="str_stub_shengya_benqi">升压站容量（本期）</string>
+    <string name="str_stub_shengya_dianya_dengji">升压站电压等级</string>
+    <string name="str_stub_shengya_dantai_rongliang">单台主变容量</string>
+    <string name="str_stub_shengya_zhubian_taishu">主变台数</string>
+    <string name="str_stub_shengya_kuojian">是否扩建</string>
+    <string name="str_stub_shengya_chuxian_jiange">升压站出线间隔回数</string>
+
+    <!--5.固定资产与折旧-->
+    <string name="str_stub_zichan_bili">递延资产形成比例</string>
+    <string name="str_stub_zichan_nianxian">递延资产摊销年限</string>
+    <string name="str_stub_zichan_wuxing_bili">无形资产（建设用地）形成比例</string>
+    <string name="str_stub_zichan_wuxing_nianxian">无形资产（建设用地）摊销年限</string>
+    <string name="str_stub_zichan_canzhi">残值率</string>
+
+    <!--6.项目运营情况-->
+    <string name="str_stub_yunying_yunwei">运维定员</string>
+    <string name="str_stub_yunying_salary">年均人工工资</string>
+    <string name="str_stub_yunying_welfare">福利系数</string>
+    <string name="str_stub_yunying_zijin">流动资金</string>
+    <string name="str_stub_yunying_zijin_bili">流动资金贷款比例</string>
+    <string name="str_stub_yunying_daikuan_lilv">贷款利率</string>
+</resources>

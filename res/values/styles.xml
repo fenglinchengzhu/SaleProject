@@ -1,0 +1,287 @@
+<resources>
+
+    <style name="myProgressBarStyleLarge">
+        　　
+        <item name="android:indeterminateDrawable">@drawable/progress_large</item>
+        　　
+        <item name="android:minWidth">30dip</item>
+        　　
+        <item name="android:maxWidth">30dip</item>
+        　　
+        <item name="android:minHeight">30dip</item>
+        　　
+        <item name="android:maxHeight">30dip</item>
+    </style>
+
+    <style name="Widget"></style>
+
+    <style name="CustomTabPageIndicator" parent="Widget">
+        <item name="android:background">@color/alpha</item>
+        <item name="android:textColor">#FF333333</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerPadding">10dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="FBReader.Activity" parent="android:Theme">
+        <item name="android:actionBarStyle">@style/myActionBarStyle</item>
+    </style>
+
+    <style name="myActionBarStyle" parent="android:Widget.ActionBar">
+        <item name="android:background">#FF242424</item>
+    </style>
+
+    <style name="FBReader.Activity.NoActionBar" parent="android:Theme"></style>
+
+    <style name="FBReader.Dialog" parent="android:Theme.Dialog"></style>
+
+    <color name="transparent">#00000000</color>
+
+    <style name="FBReader.Transparent" parent="android:Theme.Translucent.NoTitleBar">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="AppTheme" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+
+    </style>
+
+    <style name="AppThemeTranslucent" parent="@android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+    </style>
+
+    <style name="AppThemeFloat" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/alpha</item>
+    </style>
+
+    <style name="AppThemeFullscreen" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="ProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="person_menu">
+        <item name="android:background">@drawable/ripple_bg_1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:layout_height">54dp</item>
+    </style>
+
+    <!-- 个人中心 -->
+    <style name="person_item_lay_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="person_left_txt_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/txt_14_size</item>
+        <item name="android:textColor">@color/c1</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="person_right_img_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+    <style name="person_diliver_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#FFCCCCCC</item>
+    </style>
+    <!-- 个人中心 end -->
+
+    <style name="read_role_menu">
+        <item name="android:background">#FFEEEEEE</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontal_spacing" format="dimension" />
+        <attr name="vertical_spacing" format="dimension" />
+    </declare-styleable>
+
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/pop_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
+    </style>
+
+    <style name="item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="calculator_input_all_auto_txt">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/c3</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="calculator_input_all_auto_edit">
+        <item name="android:textColor">@color/c1</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+    <style name="calculator_input_all_auto_right">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/c3</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="calculator_input_all_diliver">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3px</item>
+        <item name="android:background">@color/c_ebebeb</item>
+        <item name="android:paddingLeft">26px</item>
+        <item name="android:paddingRight">26px</item>
+    </style>
+
+    <style name="calculator_input_part_item">
+        <item name="android:layout_width">177dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:background">@drawable/list_item_bg_selector</item>
+    </style>
+
+    <style name="calculator_input_part_item_txt">
+        <item name="android:textSize">@dimen/txt_20_size</item>
+        <item name="android:textColor">@drawable/list_item_txt_selector</item>
+    </style>
+
+    <style name="menu_popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/dync_out_to_left</item>
+        <item name="android:windowExitAnimation">@anim/dync_in_from_right</item>
+    </style>
+
+    <!--  -->
+    <style name="calculator_template_item_lay">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">160px</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingLeft">27px</item>
+        <item name="android:paddingRight">27px</item>
+    </style>
+
+    <style name="calculator_template_item_left_txt_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/template_left_txt_color</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="calculator_template_item_right_txt_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/template_right_txt_color</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--新版计算器涉及到的样式-->
+    <style name="calculator_spinner_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">100dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:entries">@array/frag_calculator_spinner</item>
+    </style>
+
+    <style name="calculator_edittext_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">100dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="calculator_input_left_text_style">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:maxEms">2</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/c3</item>
+        <item name="android:layout_centerVertical">true</item>
+        <!--<item name="android:gravity">center</item>-->
+    </style>
+
+    <style name="calculator_input_image_unit_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="calculator_input_text_unit_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/c3</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/afc_5dp</item>
+    </style>
+</resources>

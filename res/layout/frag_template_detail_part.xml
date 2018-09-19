@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_ebebeb"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="144px"
+        android:paddingLeft="27px"
+        android:paddingRight="27px"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/calculator_current_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/calculator_current_icon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/calculator_current_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16px"
+            android:layout_toRightOf="@+id/calculator_current_img"
+            android:text="@string/str_main_calculator"
+            android:textColor="@color/calculator_template_txt_color"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="97dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/calculator_template_btn_rest" />
+
+        <TextView
+            android:id="@+id/calculator_current_save_btn"
+            android:layout_width="97dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center|right"
+            android:paddingRight="7dp"
+            android:text="@string/str_save_template"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--1-3元素-->
+            <RelativeLayout style="@style/calculator_template_item_lay">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outA" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outA"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="121/2500" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outB" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outB"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outE1" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outE1"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="8341.45" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outF1" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outF1"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="8680.00" />
+            </RelativeLayout>
+            <!--4-6元素-->
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outC" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outC"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="33365.78" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outI" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outI"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="10000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outM" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outM"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="7.33%" />
+            </RelativeLayout>
+            <!--7-9元素-->
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outP" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outP"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="14.03%" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outY" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outY"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="2.81%" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outZ" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outZ"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="@string/str_template_all_nianfa_value" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outC1" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outC1"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="80.00%" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outD1" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outD1"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="0.34289174" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outD" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outD"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="123" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outE" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outE"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="849.75" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outF" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outF"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="200" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outG" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outG"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="75671.79" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outH" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outH"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outJ" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outJ"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outK" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outK"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="231" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outL" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outL"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outN" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outN"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outO" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outO"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outQ" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outQ"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outR" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outR"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outS" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outS"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outT" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outT"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outU" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outU"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outV" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outV"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outW" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outW"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outX" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outX"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="2.81%" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outA1" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outA1"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outB1" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outB1"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outG1" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outG1"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/calculator_template_item_lay"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/calculator_template_item_left_txt_style"
+                    android:text="@string/str_cal_simple_outH1" />
+
+                <TextView
+                    android:id="@+id/frag_cal_out_outH1"
+                    style="@style/calculator_template_item_right_txt_style"
+                    android:text="123" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

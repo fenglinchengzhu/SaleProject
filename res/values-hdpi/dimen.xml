@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ambilwarna_hsvHeight">240dp</dimen>
+    <dimen name="ambilwarna_hsvWidth">240dp</dimen>
+    <dimen name="ambilwarna_hueWidth">30dp</dimen>
+    <dimen name="ambilwarna_spacer">8dp</dimen>
+
+    <dimen name="height_top_bar">45dp</dimen>
+    <dimen name="padding_search_bar">5dp</dimen>
+    <dimen name="height_row_weixin">59dp</dimen>
+    <dimen name="size_avatar">50dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="field_textsize">14sp</dimen>
+    <dimen name="field_margin_right">5dp</dimen>
+    <dimen name="call_button_padding_vertical">10dp</dimen>
+    <dimen name="call_button_padding_left">25dp</dimen>
+    <dimen name="call_button_padding_right">25dp</dimen>
+    <dimen name="sidebar_text_size">10dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
+    <dimen name="item_spacing">48dp</dimen>
+    <dimen name="set_setting_help_margin_top">20dp</dimen>
+    <dimen name="dialog_width">280dp</dimen>
+    <dimen name="cate_txt_size">16sp</dimen>
+    <dimen name="dp_1_padding">1dp</dimen>
+
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="calculator_size_1">640px</dimen>
+    <dimen name="calculator_size_2">340px</dimen>
+    <dimen name="txt_18_size">18sp</dimen>
+    <dimen name="txt_14_size">14sp</dimen>
+    <dimen name="baike_search_height">45dp</dimen>
+    <dimen name="baike_recomment_title_size">12sp</dimen>
+
+    <dimen name="new_content_size">18sp</dimen>
+
+</resources>
+

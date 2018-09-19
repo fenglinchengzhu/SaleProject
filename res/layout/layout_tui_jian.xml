@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.goldwind.app.help.view.XListView
+        android:id="@+id/lv_tui_jian"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:divider="@color/alpha"
+        android:dividerHeight="0dp"
+        android:listSelector="@drawable/ripple_bg_4"
+        android:scrollbarSize="3dip"
+        android:scrollbarThumbVertical="@drawable/drawable_scrollbar"></com.goldwind.app.help.view.XListView>
+
+    <View
+        android:id="@+id/view_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_pic_anim"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_margin="8dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+</FrameLayout>

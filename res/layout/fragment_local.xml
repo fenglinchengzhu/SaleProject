@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/common_top_bar_blue">
+
+        <ImageView
+            android:id="@+id/iv_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10_padding"
+            android:padding="@dimen/dp_10_padding"
+            android:src="@drawable/calculator_back_icon" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="本地文档"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:padding="7dp"
+            android:src="@drawable/img_search_icon"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridView
+                android:id="@+id/gv_top"
+                android:layout_width="match_parent"
+                android:layout_height="215dp"
+                android:background="#2082e8"
+                android:cacheColorHint="#00000000"
+                android:listSelector="#00000000"
+                android:numColumns="3"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:scrollbars="none"
+                android:visibility="visible" />
+
+            <!-- 底部 -->
+
+            <LinearLayout
+                android:id="@+id/ll_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="215dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/selector_btn_class" />
+                </RelativeLayout>
+
+                <com.goldwind.app.help.view.MyGridViewDown
+                    android:id="@+id/gv_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:cacheColorHint="#00000000"
+                    android:listSelector="#00000000"
+                    android:numColumns="3"
+                    android:overScrollMode="never"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:scrollbarSize="3dip"
+                    android:scrollbarThumbVertical="@drawable/drawable_scrollbar" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_class_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/selector_btn_class" />
+            </RelativeLayout>
+
+            <com.goldwind.app.help.view.MyGridViewUP
+                android:id="@+id/gv_all_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:cacheColorHint="#00000000"
+                android:listSelector="#00000000"
+                android:numColumns="3"
+                android:overScrollMode="never"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:scrollbarSize="3dip"
+                android:scrollbarThumbVertical="@drawable/drawable_scrollbar" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_pic_anim"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_top_menu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentTop="true"
+            android:background="@color/top_bar_normal_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="个人中心"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/img_top_line"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp">
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFCCCCCC" />-->
+
+            <RelativeLayout
+                android:id="@+id/ll_read_role"
+                style="@style/person_item_lay_style">
+
+                <TextView
+                    style="@style/person_left_txt_style"
+                    android:text="我的权限" />
+
+                <ImageView
+                    style="@style/person_right_img_style"
+                    android:background="@drawable/img_right_arrow" />
+            </RelativeLayout>
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFCCCCCC" />-->
+
+            <LinearLayout
+                android:id="@+id/ll_station"
+                style="@style/person_menu"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="站内信"
+                    android:textColor="#ff403f3f" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_right_arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFCCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_test"
+                style="@style/person_menu"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="自我测试"
+                    android:textColor="#ff403f3f" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_right_arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFCCCCCC"
+                android:visibility="gone" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="#FFCCCCCC"
+                android:visibility="gone" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFCCCCCC" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="#FFCCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_clear_data"
+                style="@style/person_menu"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="清除缓存"
+                    android:textColor="#ff403f3f" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_update_app"
+                style="@style/person_item_lay_style">
+
+                <TextView
+                    style="@style/person_left_txt_style"
+                    android:text="版本更新" />
+
+                <ImageView
+                    style="@style/person_right_img_style"
+                    android:src="@drawable/img_right_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFCCCCCC" />
+
+            <RelativeLayout
+                android:id="@+id/ll_about_me"
+                style="@style/person_item_lay_style">
+
+                <TextView
+                    style="@style/person_left_txt_style"
+                    android:text="关于我们" />
+
+                <ImageView
+                    style="@style/person_right_img_style"
+                    android:src="@drawable/img_right_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFCCCCCC" />
+
+
+            <RelativeLayout
+                android:id="@+id/ll_exit_login"
+                style="@style/person_item_lay_style">
+
+                <TextView
+                    style="@style/person_left_txt_style"
+                    android:text="退出登录" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFCCCCCC" />
+    </LinearLayout>
+
+</ScrollView>

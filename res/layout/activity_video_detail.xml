@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.goldwind.app.help.view.SildingFinishLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sildingFinishLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_top_menu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/common_top_bar_blue">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="视频详情"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:src="@drawable/img_back" />
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="172dp"
+                    android:background="#2082e8"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="116dp"
+                        android:layout_height="156dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp">
+
+                        <!--
+                             <ImageView
+                            android:id="@+id/iv_pic"
+                            android:layout_width="100dp"
+                            android:layout_height="140dp"
+                            android:layout_margin="8dp"
+                            android:scaleType="centerCrop" />
+                        -->
+
+                        <FrameLayout
+                            android:id="@+id/fl_pic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="4.5dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/img_pic_yinying2"
+                            android:paddingBottom="7dp"
+                            android:paddingLeft="3.5dp"
+                            android:paddingRight="4dp"
+                            android:paddingTop="0dp">
+
+                            <!--
+                     <ImageView
+                    android:id="@+id/iv_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:scaleType="centerCrop" />
+                            -->
+
+                            <me.xiaopan.sketch.SketchImageView
+                                android:id="@+id/iv_pic"
+                                android:layout_width="100dp"
+                                android:layout_height="140dp"
+                                android:scaleType="centerCrop" />
+                        </FrameLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_video_tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/img_video_tag" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:lineSpacingMultiplier="1.1"
+                            android:lines="2"
+                            android:maxLines="2"
+                            android:text="概率论"
+                            android:textColor="#ffffffff"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_size"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginTop="15dp"
+                            android:text="10M"
+                            android:textColor="#f0eeeeee"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/bt_read"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginRight="40dp"
+                            android:background="@drawable/doc_btn"
+                            android:text="播放"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ScrollView
+                    android:id="@+id/scrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="内容简介"
+                            android:textColor="#ff333333"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:id="@+id/view_dash_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/shape_dash_line_gray"></View>
+
+                        <TextView
+                            android:id="@+id/tv_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingMultiplier="1.3"
+                            android:text="XXX"
+                            android:textColor="#ff555555"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+        </FrameLayout>
+    </LinearLayout>
+
+</com.goldwind.app.help.view.SildingFinishLayout>

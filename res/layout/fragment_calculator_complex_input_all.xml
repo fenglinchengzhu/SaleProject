@@ -1,0 +1,733 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_ebebeb"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".fragment.CalculatorEmptyFragment">
+
+    <LinearLayout
+        android:id="@+id/frag_cal_input_bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/frag_cal_input_compute_btn"
+            android:layout_width="match_parent"
+            android:layout_height="136px"
+            android:background="@color/c7"
+            android:text="@string/str_start_compute"
+            android:textColor="@color/white"
+            android:textSize="48px" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/frag_cal_input_bottom_lay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_complex_inA_txt"
+                    style="@style/calculator_input_all_auto_txt"
+                    android:layout_width="380px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="@string/str_frag_cal_input_inA" />
+
+                <Spinner
+                    android:id="@+id/frag_cal_input_edit_inA"
+                    android:layout_width="530px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="56px"
+                    android:layout_toRightOf="@+id/input_complex_inA_txt"
+                    android:background="@color/transparent"
+                    android:entries="@array/frag_calculator_spinner"
+                    android:textSize="40px" />
+
+                <ImageView
+                    android:layout_width="144px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26px"
+                    android:gravity="right"
+                    android:src="@drawable/calculator_into_icon" />
+            </RelativeLayout>
+
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_complex_inB_txt"
+                    style="@style/calculator_input_all_auto_txt"
+                    android:layout_width="380px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="@string/str_frag_cal_input_inB" />
+
+                <Spinner
+                    android:id="@+id/frag_cal_input_edit_inB"
+                    android:layout_width="530px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="56px"
+                    android:layout_toRightOf="@+id/input_complex_inB_txt"
+                    android:background="@color/transparent"
+                    android:entries="@array/input_simple_calcu_register_location"
+                    android:textSize="40px" />
+
+                <ImageView
+                    android:layout_width="144px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26px"
+                    android:gravity="right"
+                    android:src="@drawable/calculator_into_icon" />
+            </RelativeLayout>
+
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_complex_inC_txt"
+                    style="@style/calculator_input_all_auto_txt"
+                    android:layout_width="380px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="@string/str_frag_cal_input_inC" />
+
+                <Spinner
+                    android:id="@+id/frag_cal_input_edit_inC"
+                    android:layout_width="530px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="56px"
+                    android:layout_toRightOf="@+id/input_complex_inC_txt"
+                    android:background="@color/transparent"
+                    android:entries="@array/frag_calculator_spinner"
+                    android:textSize="40px" />
+
+                <ImageView
+                    android:layout_width="144px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26px"
+                    android:gravity="right"
+                    android:src="@drawable/calculator_into_icon" />
+            </RelativeLayout>
+
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_complex_inD_txt"
+                    style="@style/calculator_input_all_auto_txt"
+                    android:layout_width="380px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="@string/str_frag_cal_input_inD" />
+
+                <Spinner
+                    android:id="@+id/frag_cal_input_edit_inD"
+                    android:layout_width="530px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="56px"
+                    android:layout_toRightOf="@+id/input_complex_inD_txt"
+                    android:background="@color/transparent"
+                    android:entries="@array/frag_calculator_spinner"
+                    android:textSize="40px" />
+
+                <ImageView
+                    android:layout_width="144px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26px"
+                    android:gravity="right"
+                    android:src="@drawable/calculator_into_icon" />
+            </RelativeLayout>
+
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_complex_inE_txt"
+                    style="@style/calculator_input_all_auto_txt"
+                    android:layout_width="380px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="@string/str_frag_cal_input_inE" />
+
+                <Spinner
+                    android:id="@+id/frag_cal_input_edit_inE"
+                    android:layout_width="530px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="56px"
+                    android:layout_toRightOf="@+id/input_complex_inE_txt"
+                    android:background="@color/transparent"
+                    android:entries="@array/frag_calculator_spinner"
+                    android:textSize="40px" />
+
+                <ImageView
+                    android:layout_width="144px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26px"
+                    android:gravity="right"
+                    android:src="@drawable/calculator_into_icon" />
+            </RelativeLayout>
+
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_complex_rongliang1_txt"
+                    style="@style/calculator_input_all_auto_txt"
+                    android:layout_width="380px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="@string/str_complex_input_rongliang1" />
+
+                <com.goldwind.app.help.view.ClearEditText
+                    android:id="@+id/input_complex_right_rongliang1_txt"
+                    style="@style/calculator_input_all_auto_edit"
+                    android:layout_width="530px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="56px"
+                    android:layout_toRightOf="@+id/input_complex_rongliang1_txt"
+                    android:background="@color/transparent" />
+
+                <TextView
+                    style="@style/calculator_input_all_auto_right"
+                    android:layout_width="144px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26px"
+                    android:text="@string/str_frag_cal_input_unit_1" />
+            </RelativeLayout>
+
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_complex_rongliang2_txt"
+                    style="@style/calculator_input_all_auto_txt"
+                    android:layout_width="380px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="@string/str_complex_input_rongliang1" />
+
+                <com.goldwind.app.help.view.ClearEditText
+                    android:id="@+id/input_complex_right_rongliang2_txt"
+                    style="@style/calculator_input_all_auto_edit"
+                    android:layout_width="530px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="56px"
+                    android:layout_toRightOf="@+id/input_complex_rongliang2_txt"
+                    android:background="@color/transparent" />
+
+                <TextView
+                    style="@style/calculator_input_all_auto_right"
+                    android:layout_width="144px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26px"
+                    android:text="@string/str_frag_cal_input_unit_1" />
+            </RelativeLayout>
+
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_complex_taishu1_txt"
+                    style="@style/calculator_input_all_auto_txt"
+                    android:layout_width="380px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="@string/str_complex_input_taishu1" />
+
+                <com.goldwind.app.help.view.ClearEditText
+                    android:id="@+id/input_complex_right_taishu1_txt"
+                    style="@style/calculator_input_all_auto_edit"
+                    android:layout_width="530px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="56px"
+                    android:layout_toRightOf="@+id/input_complex_taishu1_txt"
+                    android:background="@color/transparent" />
+
+                <TextView
+                    style="@style/calculator_input_all_auto_right"
+                    android:layout_width="144px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26px"
+                    android:text="@string/str_frag_cal_input_unit_8" />
+            </RelativeLayout>
+
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_complex_taishu2_txt"
+                    style="@style/calculator_input_all_auto_txt"
+                    android:layout_width="380px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="@string/str_complex_input_taishu2" />
+
+                <com.goldwind.app.help.view.ClearEditText
+                    android:id="@+id/input_complex_right_taishu2_txt"
+                    style="@style/calculator_input_all_auto_edit"
+                    android:layout_width="530px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="56px"
+                    android:layout_toRightOf="@+id/input_complex_taishu2_txt"
+                    android:background="@color/transparent" />
+
+                <TextView
+                    style="@style/calculator_input_all_auto_right"
+                    android:layout_width="144px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26px"
+                    android:text="@string/str_frag_cal_input_unit_8" />
+            </RelativeLayout>
+            <!--小时数-->
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_complex_hours_txt"
+                    style="@style/calculator_input_all_auto_txt"
+                    android:layout_width="380px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="@string/str_complex_input_hours" />
+
+                <com.goldwind.app.help.view.ClearEditText
+                    android:id="@+id/input_complex_right_hours_txt"
+                    style="@style/calculator_input_all_auto_edit"
+                    android:layout_width="530px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="56px"
+                    android:layout_toRightOf="@+id/input_complex_hours_txt"
+                    android:background="@color/transparent" />
+
+                <TextView
+                    style="@style/calculator_input_all_auto_right"
+                    android:layout_width="144px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26px"
+                    android:text="@string/str_frag_cal_input_unit_2" />
+            </RelativeLayout>
+            <!--开工日期-->
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_complex_start_date_txt"
+                    style="@style/calculator_input_all_auto_txt"
+                    android:layout_width="380px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="@string/str_complex_input_start_date" />
+
+                <com.goldwind.app.help.view.ClearEditText
+                    android:id="@+id/input_complex_right_start_date_txt"
+                    style="@style/calculator_input_all_auto_edit"
+                    android:layout_width="530px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="56px"
+                    android:layout_toRightOf="@+id/input_complex_start_date_txt"
+                    android:background="@color/transparent" />
+
+                <TextView
+                    style="@style/calculator_input_all_auto_right"
+                    android:layout_width="144px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26px"
+                    android:text="@string/str_frag_cal_input_unit_2" />
+            </RelativeLayout>
+
+            <!--建设期（年）-->
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_complex_construct_txt"
+                    style="@style/calculator_input_all_auto_txt"
+                    android:layout_width="380px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="@string/str_complex_input_construct" />
+
+                <com.goldwind.app.help.view.ClearEditText
+                    android:id="@+id/input_complex_right_construct_txt"
+                    style="@style/calculator_input_all_auto_edit"
+                    android:layout_width="530px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="56px"
+                    android:layout_toRightOf="@+id/input_complex_construct_txt"
+                    android:background="@color/transparent" />
+
+                <TextView
+                    style="@style/calculator_input_all_auto_right"
+                    android:layout_width="144px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26px"
+                    android:text="@string/str_frag_cal_input_unit_2" />
+            </RelativeLayout>
+            <!--运营期限（年）-->
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_complex_run_time_txt"
+                    style="@style/calculator_input_all_auto_txt"
+                    android:layout_width="380px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="@string/str_complex_input_run_time" />
+
+                <com.goldwind.app.help.view.ClearEditText
+                    android:id="@+id/input_complex_right_run_time_txt"
+                    style="@style/calculator_input_all_auto_edit"
+                    android:layout_width="530px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="56px"
+                    android:layout_toRightOf="@+id/input_complex_run_time_txt"
+                    android:background="@color/transparent" />
+
+                <TextView
+                    style="@style/calculator_input_all_auto_right"
+                    android:layout_width="144px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26px"
+                    android:text="@string/str_frag_cal_input_unit_3" />
+            </RelativeLayout>
+            <!--固定资产增值税是否抵扣-->
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_complex_zichan_txt"
+                    style="@style/calculator_input_all_auto_txt"
+                    android:layout_width="380px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="@string/str_complex_input_spinner_zichan" />
+
+                <Spinner
+                    android:id="@+id/frag_cal_input_zichan_spinner"
+                    android:layout_width="530px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="56px"
+                    android:layout_toRightOf="@+id/input_complex_zichan_txt"
+                    android:background="@color/transparent"
+                    android:entries="@array/frag_calculator_spinner"
+                    android:textSize="40px" />
+
+                <ImageView
+                    android:layout_width="144px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26px"
+                    android:gravity="right"
+                    android:src="@drawable/calculator_into_icon" />
+            </RelativeLayout>
+            <!--资本金比例-->
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_complex_cash_percent_txt"
+                    style="@style/calculator_input_all_auto_txt"
+                    android:layout_width="380px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="@string/str_complex_input_cash_percent" />
+
+                <com.goldwind.app.help.view.ClearEditText
+                    android:id="@+id/input_complex_right_cash_percent_txt"
+                    style="@style/calculator_input_all_auto_edit"
+                    android:layout_width="530px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="56px"
+                    android:layout_toRightOf="@+id/input_complex_cash_percent_txt"
+                    android:background="@color/transparent" />
+
+                <TextView
+                    style="@style/calculator_input_all_auto_right"
+                    android:layout_width="144px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26px"
+                    android:text="@string/str_frag_cal_input_unit_7" />
+            </RelativeLayout>
+            <!--长期贷款名义利率-->
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_complex_loan_percent_txt"
+                    style="@style/calculator_input_all_auto_txt"
+                    android:layout_width="380px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="@string/str_complex_input_loan_percent" />
+
+                <com.goldwind.app.help.view.ClearEditText
+                    android:id="@+id/input_complex_right_loan_percent_txt"
+                    style="@style/calculator_input_all_auto_edit"
+                    android:layout_width="530px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="56px"
+                    android:layout_toRightOf="@+id/input_complex_loan_percent_txt"
+                    android:background="@color/transparent" />
+
+                <TextView
+                    style="@style/calculator_input_all_auto_right"
+                    android:layout_width="144px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26px"
+                    android:text="@string/str_frag_cal_input_unit_7" />
+            </RelativeLayout>
+            <!--年计息次数-->
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_complex_loan_times_txt"
+                    style="@style/calculator_input_all_auto_txt"
+                    android:layout_width="380px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="@string/str_complex_input_loan_times" />
+
+                <com.goldwind.app.help.view.ClearEditText
+                    android:id="@+id/input_complex_right_loan_times_txt"
+                    style="@style/calculator_input_all_auto_edit"
+                    android:layout_width="530px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="56px"
+                    android:layout_toRightOf="@+id/input_complex_loan_times_txt"
+                    android:background="@color/transparent" />
+
+                <TextView
+                    style="@style/calculator_input_all_auto_right"
+                    android:layout_width="144px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26px"
+                    android:text="@string/str_frag_cal_input_unit_6" />
+            </RelativeLayout>
+
+            <!--贷款宽限期-->
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_complex_loan_delay_txt"
+                    style="@style/calculator_input_all_auto_txt"
+                    android:layout_width="380px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="@string/str_complex_input_loan_delay" />
+
+                <com.goldwind.app.help.view.ClearEditText
+                    android:id="@+id/input_complex_right_loan_delay_txt"
+                    style="@style/calculator_input_all_auto_edit"
+                    android:layout_width="530px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="56px"
+                    android:layout_toRightOf="@+id/input_complex_loan_delay_txt"
+                    android:background="@color/transparent" />
+
+                <TextView
+                    style="@style/calculator_input_all_auto_right"
+                    android:layout_width="144px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26px"
+                    android:text="@string/str_frag_cal_input_unit_6" />
+            </RelativeLayout>
+
+            <!--还款方式-->
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_complex_loan_back_txt"
+                    style="@style/calculator_input_all_auto_txt"
+                    android:layout_width="380px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="@string/str_complex_input_loan_back" />
+
+                <Spinner
+                    android:id="@+id/frag_cal_input_loan_back_spinner"
+                    android:layout_width="530px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="56px"
+                    android:layout_toRightOf="@+id/input_complex_loan_back_txt"
+                    android:background="@color/transparent"
+                    android:entries="@array/frag_complex_rongliang_array"
+                    android:textSize="40px" />
+
+                <ImageView
+                    android:layout_width="144px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="26px"
+                    android:gravity="right"
+                    android:src="@drawable/calculator_into_icon" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

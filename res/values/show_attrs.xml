@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="vpiTabPageIndicatorStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ViewPagerIndicatorItemStyle">
+        <attr name="firstItemBackground" format="reference|color" />
+        <attr name="lastItemBackground" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipyRefreshLayout">
+        <attr name="direction">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="both" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ShowTagView">
+        <attr name="drawableItemMargin" format="dimension" />
+    </declare-styleable>
+</resources>

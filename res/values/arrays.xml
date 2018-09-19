@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="knowledge_baike_array">
+        <item>风机百科</item>
+        <item>风资源百科</item>
+        <item>营销百科</item>
+    </array>
+
+    <array name="knowledge_baike_detail_array">
+        <item>1.5MW机组</item>
+        <item>2.0MW机组</item>
+        <item>2.5MW机组</item>
+        <item>3.0MW机组</item>
+    </array>
+
+    <array name="frag_complex_loan_back_array">
+        <item>等额还本付息</item>
+        <item>等额本金还款</item>
+    </array>
+
+    <array name="frag_complex_rongliang_array">
+        <item>"1500"</item>
+        <item>"1650"</item>
+        <item>"2000"</item>
+        <item>"2500"</item>
+        <item>"3000"</item>
+    </array>
+
+    <array name="frag_calculator_spinner">
+        <item>是</item>
+        <item>否</item>
+    </array>
+
+    <array name="spinner_a_default">
+        <item>华北</item>
+    </array>
+    <array name="spinner_b_default">
+        <item>县镇</item>
+    </array>
+    <array name="spinner_c_default">
+        <item>内蒙古西部</item>
+    </array>
+    <array name="spinner_d_default">
+        <item>III</item>
+    </array>
+    <array name="spinner_e_default">
+        <item>121/2500</item>
+    </array>
+
+    <array name="input_simple_calcu_register_location">
+        <item>城市</item>
+        <item>县镇</item>
+        <item>农村</item>
+    </array>
+
+    <array name="frag_input_part_index">
+        <item>工程概况</item>
+        <item>机组</item>
+        <item>风电场</item>
+        <item>升压站</item>
+        <item>固定资产与折旧</item>
+        <item>项目运营情况</item>
+    </array>
+
+    <!--集电线路电压等级-->
+    <array name="stub_cal_input_fengdian_dengji">
+        <item>"10"</item>
+        <item>"35"</item>
+    </array>
+    <array name="stub_cal_input_fengdian_pushe">
+        <item>架空线路</item>
+        <item>电缆直埋</item>
+    </array>
+    <array name="stub_cal_input_fengdian_type">
+        <item>简易路</item>
+        <item>水泥路</item>
+        <item>柏油路</item>
+    </array>
+
+    <array name="stub_cal_input_shengya_dengji">
+        <item>"110"</item>
+        <item>"220"</item>
+    </array>
+
+    <array name="calculator_type_array">
+        <item>主投方案</item>
+        <item>竞投方案1</item>
+        <item>备投方案</item>
+        <item>竞投方案2</item>
+        <item>竞投方案3</item>
+    </array>
+
+    <array name="calculator_history_array">
+        <item>2.0WM计算器2016.1.17计算结果</item>
+        <item>2.5WM计算器2016.1.17计算结果</item>
+        <item>3.0WM计算器2016.1.17计算结果</item>
+        <item>2.0WM计算器2016.1.17计算结果</item>
+        <item>2.5WM计算器2016.1.17计算结果</item>
+        <item>2.5WM计算器2016.1.17计算结果</item>
+        <item>1.5WM计算器2016.1.17计算结果</item>
+        <item>1.5WM计算器2016.1.17计算结果</item>
+    </array>
+
+    <array name="calculator_template_array">
+        <item>2.0MW计算器BB类项目计算器</item>
+        <item>3.0MW计算器BBSDDF类项目计算模板</item>
+        <item>1.5MW计算器BBSSSS类项目计算模板</item>
+        <item>2.0MW计算器BB类项目计算模板</item>
+        <item>2.5MW计算器XXXXX类项目计算模板</item>
+        <item>2.0MW计算器BBSSSS类项目计算模板</item>
+    </array>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.goldwind.app.help.activity.KnowledgeBaikeActivity">
+
+    <RelativeLayout
+        android:id="@+id/knowledge_baike_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/top_bar_normal_bg">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="知识百科"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/knowledge_baike_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_arrow_left" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/vp_recommend"
+        android:background="#dddddd" />
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.goldwind.app.help.view.XListView
+        android:id="@+id/lv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#dddddd"
+        android:dividerHeight="2px"
+        android:listSelector="@drawable/ripple_bg_4"
+        android:scrollbarSize="3dip"
+        android:scrollbarThumbVertical="@drawable/drawable_scrollbar"></com.goldwind.app.help.view.XListView>
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.goldwind.app.help.view.SildingFinishLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sildingFinishLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/about_bg">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_top_menu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentTop="true"
+            android:background="@color/top_bar_normal_bg">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:onClick="back"
+                android:padding="15dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_arrow_left" />
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:maxWidth="200dp"
+                android:singleLine="true"
+                android:text="关于我们"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#dddddd" />-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:text="金风营销系统移动信息平台"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="32px"
+                    android:text="版本：v1.0.0"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="32px"
+                    android:background="#3e86cb"
+                    android:orientation="vertical"
+                    android:paddingBottom="50px"
+                    android:paddingLeft="26px"
+                    android:paddingRight="26px"
+                    android:paddingTop="50px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/about_tianyuan_company_info"
+                        android:textColor="#abbed9" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/about_tianyuan_company_addr"
+                        android:textColor="#abbed9" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/about_tianyuan_tel"
+                        android:textColor="#abbed9" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/about_ty_pt"
+                        android:textColor="#abbed9" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/about_ty_zc"
+                        android:textColor="#abbed9" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:text="@string/about_tiancheng_company_info"
+                        android:textColor="#abbed9" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/about_tiancheng_company_addr"
+                        android:textColor="#abbed9" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/about_tiancheng_tel"
+                        android:textColor="#abbed9" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/about_tc_pt"
+                        android:textColor="#abbed9" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/about_tc_zc"
+                        android:textColor="#abbed9" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</com.goldwind.app.help.view.SildingFinishLayout>

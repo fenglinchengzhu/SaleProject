@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/common_top_bar_blue">
+
+    <ImageView
+        android:id="@+id/home_header_home_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/home_index_icon" />
+
+    <ImageView
+        android:id="@+id/home_header_search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_menu_search" />
+
+    <RelativeLayout
+        android:id="@+id/home_header_inner_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/home_header_search_btn"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/home_inner_search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/afc_10dp"
+            android:text="搜索"
+            android:textSize="@dimen/txt_20_size" />
+
+        <com.goldwind.app.help.view.ClearEditText
+            android:id="@+id/home_inner_search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/afc_10dp"
+            android:layout_toLeftOf="@+id/home_inner_search_btn"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/afc_10dp"
+            android:singleLine="true"
+            android:textSize="@dimen/txt_24_size" />
+    </RelativeLayout>
+</RelativeLayout>

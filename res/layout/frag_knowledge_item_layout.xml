@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/baike_list_item_height"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/frag_knowledge_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/frag_knowledge_item_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/baike_list_item_margin"
+        android:background="@drawable/img_right_arrow" />
+
+    <TextView
+        android:id="@+id/frag_knowledge_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/baike_list_item_margin"
+        android:layout_toLeftOf="@+id/frag_knowledge_item_right"
+        android:layout_toRightOf="@+id/frag_knowledge_item_icon"
+        android:gravity="center_vertical"
+        android:textColor="#333333"
+        android:textSize="@dimen/txt_14_size" />
+</RelativeLayout>

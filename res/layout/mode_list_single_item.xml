@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/mode_list_single_item_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="23dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="公司简介"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/calculator_into_icon" />
+</RelativeLayout>

@@ -1,0 +1,69 @@
+-keepattributes Signature
+
+-dontnote android.**
+-dontnote android.**$**
+-dontnote com.android.**
+
+-keep class com.android.** {*;}
+-keep class android.** {*;}
+-keep class android.**$** {*;}
+
+-dontwarn android.support.**
+-keep class android.support.**
+-dontnote android.support.**
+
+-keep class com.nostra13.** { *; }
+-keep class org.apache.** { *; }
+-keep class com.google.** { *; }
+
+-keep class * extends java.lang.annotation.Annotation { *; }
+-keepclassmembers class * implements java.io.Serializable { *; }
+-keep class com.goldwind.app.help.model.** { *; }
+
+-dontwarn butterknife.internal.**
+-keep class **$$ViewInjector { *; }
+-keepnames class * { @butterknife.InjectView *;}
+
+-keep class butterknife.** { *; }
+-dontwarn butterknife.internal.**
+-keep class **$$ViewBinder { *; }
+
+-keepclasseswithmembernames class * {
+    @butterknife.* <fields>;
+}
+
+-keepclasseswithmembernames class * {
+    @butterknife.* <methods>;
+}
+
+-dontwarn org.**
+-keep class org.** {*;}
+-dontwarn io.**
+-keep class io.** {*;}
+-dontwarn pl.**
+-keep class pl.** {*;}
+-dontwarn uk.**
+-keep class uk.** {*;}
+-dontwarn yuku.**
+-keep class yuku.** {*;}
+-dontwarn group.**
+-keep class group.** {*;}
+-dontwarn com.mobeta.**
+-keep class com.mobeta.** {*;}
+-dontwarn com.github.**
+-keep class com.github.** {*;}
+-dontwarn com.example.**
+-keep class com.example.** {*;}
+-dontwarn com.artifex.mupdfdemo.**
+-keep class com.artifex.mupdfdemo.** {*;}
+-dontwarn com.amazonaws.**
+-keep class com.amazonaws.** {*;}
+-dontwarn demo.**
+-keep class demo.** {*;}
+-dontwarn com.hp.hpl.sparta.**
+-keep class com.hp.hpl.sparta.** {*;}
+-dontwarn com.jeremyfeinstein.slidingmenu.lib.**
+-keep class com.jeremyfeinstein.slidingmenu.lib.** {*;}
+-keepclassmembers class com.goldwind.app.help.activity.BaikeContentDetailActivity {   public *; }
+ -keepattributes *Annotation* 
+-keepattributes *JavascriptInterface*

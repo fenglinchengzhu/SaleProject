@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.goldwind.app.help.activity.DocumentActivity">
+
+    <include
+        android:id="@+id/activity_doc_title"
+        layout="@layout/calculator_back_header" />
+
+    <RelativeLayout
+        android:id="@+id/rl_doc_bd"
+        style="@style/person_item_lay_style"
+        android:layout_below="@+id/activity_doc_title">
+
+        <TextView
+            style="@style/person_left_txt_style"
+            android:text="本地文档" />
+
+        <ImageView
+            style="@style/person_right_img_style"
+            android:src="@drawable/img_right_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFCCCCCC" />
+
+    <RelativeLayout
+        android:id="@+id/rl_doc_zx"
+        style="@style/person_item_lay_style"
+        android:layout_below="@+id/activity_doc_title">
+
+        <TextView
+            style="@style/person_left_txt_style"
+            android:text="在线文档" />
+
+        <ImageView
+            style="@style/person_right_img_style"
+            android:src="@drawable/img_right_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFCCCCCC" />
+
+    <FrameLayout
+        android:id="@+id/activity_doc_content"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_doc_title"
+        android:background="#ebebeb" />
+</LinearLayout>

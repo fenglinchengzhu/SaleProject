@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ambilwarna_hsvHeight">240dp</dimen>
+    <dimen name="ambilwarna_hsvWidth">240dp</dimen>
+    <dimen name="ambilwarna_hueWidth">30dp</dimen>
+    <dimen name="ambilwarna_spacer">8dp</dimen>
+
+    <dimen name="height_top_bar">45dp</dimen>
+    <dimen name="padding_search_bar">5dp</dimen>
+    <dimen name="height_row_weixin">59dp</dimen>
+    <dimen name="size_avatar">50dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="field_textsize">14sp</dimen>
+    <dimen name="field_margin_right">5dp</dimen>
+    <dimen name="call_button_padding_vertical">10dp</dimen>
+    <dimen name="call_button_padding_left">25dp</dimen>
+    <dimen name="call_button_padding_right">25dp</dimen>
+    <dimen name="sidebar_text_size">10dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
+    <dimen name="item_spacing">48dp</dimen>
+    <dimen name="set_setting_help_margin_top">20dp</dimen>
+    <dimen name="dialog_width">280dp</dimen>
+    <dimen name="cate_txt_size">16sp</dimen>
+    <dimen name="dp_1_padding">1dp</dimen>
+
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="calculator_size_1">720px</dimen>
+    <dimen name="calculator_size_2">380px</dimen>
+    <dimen name="txt_18_size">18sp</dimen>
+    <dimen name="txt_14_size">14sp</dimen>
+
+    <dimen name="baike_list_item_height">188px</dimen>
+    <dimen name="baike_list_item_margin">22px</dimen>
+
+    <dimen name="baike__frag_item_img_width">320px</dimen>
+    <dimen name="baike__frag_item_img_height">208px</dimen>
+    <dimen name="baike_search_height">45dp</dimen>
+    <dimen name="baike_recomment_title_size">14sp</dimen>
+    <dimen name="afc_30dp">30dp</dimen>
+    <dimen name="afc_10dp">10dp</dimen>
+    <dimen name="afc_5dp">5dp</dimen>
+    <dimen name="dp_5_padding">@dimen/afc_5dp</dimen>
+    <dimen name="dp_10_padding">10dp</dimen>
+    <dimen name="dp_20_padding">20dp</dimen>
+    <dimen name="dp_30_padding">30dp</dimen>
+    <dimen name="dp_60_padding">60dp</dimen>
+    <dimen name="afc_button_location_max_width">256sp</dimen>
+    <dimen name="afc_button_location_min_width">15sp</dimen>
+    <dimen name="afc_context_menu_item_padding_left">18sp</dimen>
+    <dimen name="afc_single_button_min_width">192sp</dimen>
+    <dimen name="afc_viewgroup_button_locations_bottom_divider_height">1dp</dimen>
+
+    <dimen name="txt_24_size">24sp</dimen>
+    <dimen name="txt_20_size">20sp</dimen>
+</resources>
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:layout_alignParentTop="true"
+        android:background="@color/top_bar_normal_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/ic_arrow_left" />
+
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_5_padding"
+            android:layout_marginRight="@dimen/dp_5_padding"
+            android:layout_toRightOf="@+id/iv_back"
+            android:background="@drawable/search_input_bg"
+            android:hint="请输入搜索内容"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/search_btn"
+            android:text="搜索"
+            android:textSize="18sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/rl_top_menu"
+        android:background="#dddddd" />
+
+    <com.goldwind.app.help.view.XListView
+        android:id="@+id/search_result_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/divider_1"
+        android:divider="@color/alpha"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/ripple_bg_4"
+        android:scrollbarSize="3dip"
+        android:scrollbarThumbVertical="@drawable/drawable_scrollbar"
+        android:visibility="gone">
+
+    </com.goldwind.app.help.view.XListView>
+
+    <RelativeLayout
+        android:id="@+id/rl_search_reslut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider_1"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/lv_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/top_bar_normal_bg"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:visibility="gone"></ListView>
+
+        <Button
+            android:id="@+id/tv_index"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lv_search_result"
+            android:background="#3e86cb"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/afc_10dp"
+            android:text="快速进入知识百科体系索引"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/txt_18_size"
+            android:visibility="visible" />
+    </RelativeLayout>
+</RelativeLayout>

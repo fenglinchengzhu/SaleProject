@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="#222222"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_loading_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@anim/show_anim_loading_dialog" />
+
+            <TextView
+                android:id="@+id/tv_loading_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="正在加载"
+                android:textColor="@color/gray_d"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

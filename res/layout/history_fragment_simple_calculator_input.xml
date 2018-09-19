@@ -1,0 +1,300 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_ebebeb"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".fragment.SimpleCalculatorInputFragment">
+    <!--<TextView
+        android:id="@+id/frag_cal_input_all_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_20_padding"
+        android:layout_marginTop="@dimen/dp_20_padding"
+        android:textSize="@dimen/txt_20_size"
+        android:textColor="@color/black"
+        android:text="@string/str_frag_cal_input_part_name"/>-->
+    <LinearLayout
+        android:id="@+id/frag_cal_input_bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <!--<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_24_size"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_green_shape"
+            android:text="重置" />-->
+
+        <Button
+            android:id="@+id/frag_cal_input_compute_btn"
+            android:layout_width="match_parent"
+            android:layout_height="136px"
+            android:background="@color/c7"
+            android:text="@string/str_start_compute"
+            android:textColor="@color/white"
+            android:textSize="48px" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/frag_cal_input_bottom_lay"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_10_padding"
+            android:paddingRight="@dimen/dp_10_padding">
+            <!--项目所属区域-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_simple_inA_txt"
+                    style="@style/calculator_input_left_text_style"
+                    android:text="@string/str_frag_cal_input_inA" />
+
+                <ImageView
+                    android:id="@+id/input_simple_inA_unit"
+                    style="@style/calculator_input_image_unit_style"
+                    android:src="@drawable/calculator_into_icon" />
+
+                <TextView
+                    android:id="@+id/frag_cal_input_edit_inA"
+                    style="@style/calculator_spinner_style"
+                    android:layout_toLeftOf="@+id/input_simple_inA_unit"
+                    android:layout_toRightOf="@+id/input_simple_inA_txt" />
+            </RelativeLayout>
+            <!--项目公司注册地-->
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_simple_inB_txt"
+                    style="@style/calculator_input_left_text_style"
+                    android:text="@string/str_frag_cal_input_inB" />
+
+                <ImageView
+                    android:id="@+id/input_simple_inB_unit"
+                    style="@style/calculator_input_image_unit_style"
+                    android:src="@drawable/calculator_into_icon" />
+
+                <TextView
+                    android:id="@+id/frag_cal_input_edit_inB"
+                    style="@style/calculator_spinner_style"
+                    android:layout_toLeftOf="@+id/input_simple_inB_unit"
+                    android:layout_toRightOf="@+id/input_simple_inB_txt"
+                    android:entries="@array/input_simple_calcu_register_location" />
+            </RelativeLayout>
+            <!--项目所在省份-->
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_simple_inC_txt"
+                    style="@style/calculator_input_left_text_style"
+                    android:text="@string/str_frag_cal_input_inC" />
+
+                <ImageView
+                    android:id="@+id/input_simple_inC_unit"
+                    style="@style/calculator_input_image_unit_style"
+                    android:src="@drawable/calculator_into_icon" />
+
+                <TextView
+                    android:id="@+id/frag_cal_input_edit_inC"
+                    style="@style/calculator_spinner_style"
+                    android:layout_toLeftOf="@+id/input_simple_inC_unit"
+                    android:layout_toRightOf="@+id/input_simple_inC_txt" />
+            </RelativeLayout>
+            <!--风区类别-->
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_simple_inD_txt"
+                    style="@style/calculator_input_left_text_style"
+                    android:text="@string/str_frag_cal_input_inD" />
+
+                <ImageView
+                    android:id="@+id/input_simple_inD_unit"
+                    style="@style/calculator_input_image_unit_style"
+                    android:src="@drawable/calculator_into_icon" />
+
+                <TextView
+                    android:id="@+id/frag_cal_input_edit_inD"
+                    style="@style/calculator_spinner_style"
+                    android:layout_toLeftOf="@+id/input_simple_inD_unit"
+                    android:layout_toRightOf="@+id/input_simple_inD_txt" />
+            </RelativeLayout>
+            <!--机组类型-->
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_simple_inE_txt"
+                    style="@style/calculator_input_left_text_style"
+                    android:text="@string/str_frag_cal_input_inE" />
+
+                <ImageView
+                    android:id="@+id/input_simple_inE_unit"
+                    style="@style/calculator_input_image_unit_style"
+                    android:src="@drawable/calculator_into_icon" />
+
+                <TextView
+                    android:id="@+id/frag_cal_input_edit_inE"
+                    style="@style/calculator_spinner_style"
+                    android:layout_toLeftOf="@+id/input_simple_inE_unit"
+                    android:layout_toRightOf="@+id/input_simple_inE_txt" />
+            </RelativeLayout>
+
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/input_simple_intF_txt"
+                    style="@style/calculator_input_left_text_style"
+                    android:text="@string/str_frag_cal_input_inF" />
+
+                <TextView
+                    android:id="@+id/input_simple_intF_unit"
+                    style="@style/calculator_input_text_unit_style"
+                    android:text="@string/str_frag_cal_input_unit_1" />
+
+                <TextView
+                    android:id="@+id/input_simple_right_inF_txt"
+                    style="@style/calculator_edittext_style"
+                    android:layout_toLeftOf="@+id/input_simple_intF_unit"
+                    android:layout_toRightOf="@+id/input_simple_intF_txt" />
+            </RelativeLayout>
+
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/input_simple_intG_txt"
+                    style="@style/calculator_input_left_text_style"
+                    android:text="@string/str_frag_cal_input_inG" />
+
+                <TextView
+                    android:id="@+id/input_simple_intG_unit"
+                    style="@style/calculator_input_text_unit_style"
+                    android:text="@string/str_frag_cal_input_unit_2" />
+
+                <TextView
+                    android:id="@+id/input_simple_right_inG_txt"
+                    style="@style/calculator_edittext_style"
+                    android:layout_toLeftOf="@+id/input_simple_intG_unit"
+                    android:layout_toRightOf="@+id/input_simple_intG_txt" />
+            </RelativeLayout>
+
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_simple_intH_txt"
+                    style="@style/calculator_input_left_text_style"
+                    android:text="@string/str_frag_cal_input_inF" />
+
+                <TextView
+                    android:id="@+id/input_simple_intH_unit"
+                    style="@style/calculator_input_text_unit_style"
+                    android:text="@string/str_frag_cal_input_unit_3" />
+
+                <TextView
+                    android:id="@+id/input_simple_right_inH_txt"
+                    style="@style/calculator_edittext_style"
+                    android:layout_toLeftOf="@+id/input_simple_intH_unit"
+                    android:layout_toRightOf="@+id/input_simple_intH_txt" />
+            </RelativeLayout>
+
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_simple_intI_txt"
+                    style="@style/calculator_input_left_text_style"
+                    android:text="@string/str_frag_cal_input_inI" />
+
+                <TextView
+                    android:id="@+id/input_simple_intI_unit"
+                    style="@style/calculator_input_text_unit_style"
+                    android:text="@string/str_frag_cal_input_unit_4" />
+
+                <TextView
+                    android:id="@+id/input_simple_right_inI_txt"
+                    style="@style/calculator_edittext_style"
+                    android:layout_toLeftOf="@+id/input_simple_intI_unit"
+                    android:layout_toRightOf="@+id/input_simple_intI_txt" />
+            </RelativeLayout>
+
+            <View style="@style/calculator_input_all_diliver" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/input_simple_intJ_txt"
+                    style="@style/calculator_input_left_text_style"
+                    android:text="@string/str_frag_cal_input_inJ" />
+
+                <TextView
+                    android:id="@+id/input_simple_intJ_unit"
+                    style="@style/calculator_input_text_unit_style"
+                    android:text="@string/str_frag_cal_input_unit_5" />
+
+                <TextView
+                    android:id="@+id/input_simple_right_inJ_txt"
+                    style="@style/calculator_edittext_style"
+                    android:layout_toLeftOf="@+id/input_simple_intJ_unit"
+                    android:layout_toRightOf="@+id/input_simple_intJ_txt" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

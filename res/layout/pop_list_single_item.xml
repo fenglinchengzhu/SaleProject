@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/item_navigate_color">
+    <!-- <ImageView
+         android:id="@+id/list_single_item_icon"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:background="@drawable/index_slidercircle_bg"
+         android:layout_marginLeft="23dp"
+         android:visibility="invisible"
+         />-->
+    <ImageView
+        android:id="@+id/list_single_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/calculator_into_icon" />
+
+    <TextView
+        android:id="@+id/list_single_item_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="@dimen/afc_5dp"
+        android:layout_toLeftOf="@+id/list_single_item_img"
+        android:singleLine="true"
+        android:text="公司简介"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</RelativeLayout>
